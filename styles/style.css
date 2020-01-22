@@ -1,0 +1,120 @@
+html {
+    font-size: 10px; /* px means "pixels": the base font size is now 10 pixels high  */
+    font-family: 'Roboto', sans-serif; /* this should be the rest of the output you got from Google fonts */
+    background-color:#ffffff;
+    margin:0
+  }
+  
+.shoppingOffer{
+    text-align: center;
+}
+.shoppingOffer-container {
+    align-content: flex-start;
+    display: grid;
+    border:1px black dashed;
+    width: 90%;
+  }
+
+.app-title{
+    font-size: 60px;
+    text-align: left;
+    color:#2502b0;
+    margin:0;
+    padding:20px 0;
+    
+}
+.itemName{
+    font-size:11px;
+    max-width: 100%;
+    font-family: 'Gill Sans', sans-serif;
+    font-weight: bold;
+    color:  black ;
+    text-align: center;
+    padding: 0;
+    
+}
+
+a.titlelink:link     {   text-decoration: none;  } 
+a.titlelink:visited  {   text-decoration: none;  }
+a.titlelink:hover    {   text-decoration: none;  }
+a.titlelink:active   {   text-decoration: none;  }
+
+tr, td { 
+    align-content: center;
+    display: inline-table;
+    width: 30%;
+    height: 3%;
+    border:1px green dashed;
+    
+}
+
+ img.cartimg {
+    width: 10;
+    height: 10;
+    border: 1px red solid;
+    text-align: center;
+}
+
+  table {
+    border-collapse: separate;
+    border: 2px solid rgb(200,200,200);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+   
+
+  }
+  
+  
+  th {
+    background-color: rgb(235,235,235);
+  
+    
+  }
+  
+  td.columnstats{
+    text-align: center;
+    font-size:10;
+    display: list-item;
+    list-style-type: none;
+    border:1px pink dashed;
+    
+}
+
+.priceDisplay{
+    display: inline-table;
+    font-size: 10;
+    font-style: italic;
+    width: 0;
+    border:1px black dashed;
+    max-width: 100%;
+}
+  
+  tr:nth-child(even) td {
+    background-color: rgb(250,250,250);
+  }
+  
+  tr:nth-child(odd) td {
+    background-color: rgb(245,245,245);
+  }
+
+  .myButton {
+	background-color:#3eb9d1;
+	border-radius:42px;
+	border:1px solid #3e84cf;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:8px;
+	padding:8px 15px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #2f6627;
+}
+.myButton:hover {
+    background-color:#216dde;
+    
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
