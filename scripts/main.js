@@ -18,7 +18,7 @@ $(document).ready(function(){ /*Function for getting stuff from json file and pr
                         products_data += '<li class="itemAmount">'+value.price.amount+'</li>';
 	     		        products_data += '<li class="itemValute">'+value.price.currency+"&#47"+'</li>';
                         products_data += '<li class="itemUnits">'+value.price.measureUnit+'</li>';
-                        products_data += '<li><button class="btn btn-shopping btn-primary" type="button" title="Add item to cart">Cart &#128722;</button></li>';
+                        products_data += '<li><button class="btn btn-shopping btn-primary" id="button" title="Add item to cart" onclick="addToCartClicked()">Cart &#128722;</button></li>';
                     products_data += '</ul>';
                     
         });
@@ -39,7 +39,10 @@ function ready(){
         input.addEventListener('change', quantityChanged)
 
     }
+
 }
+
+
 
 function removeCartItem(event){/*Function that removes cart item. Deletes whole item (Name/quantity/price).*/ 
     var buttonClicked = event.target
@@ -56,9 +59,7 @@ function quantityChanged(event){
 }
 
 function addToCartClicked(event){
-    var button = event.target
-    var shopItem = button.parentElement.parentElement.parentElement
-    var title = shopItem.getElementsByClassName('itemName')[0].innerText
+    var title = products_data.value.name
     
 }
 
