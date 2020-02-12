@@ -93,6 +93,13 @@ html,body{
     padding: 0 1.5em;   
 }
 
+.container-list{
+    max-width:1500px;
+    text-align: center;
+    margin: auto;
+    padding: 0 1.5em;   
+}
+
 .section-header-main{
     font-family: 'Roboto';
     font-weight: normal;
@@ -138,7 +145,7 @@ html,body{
     text-align: center;
     padding:10px;
     display: inline-table;
-    width: .33em;
+    max-width: 33%;
     padding-bottom: 12%; /* 32:18, i.e. 16:9 */
     margin-bottom: 2%; /* (100-32*3)/2 */
     background: #ffccff;
@@ -150,8 +157,6 @@ html,body{
     height: 300px;
     margin-bottom:10%;
     border-radius: 30%;
-    padding: 20px;
-    background-color:white ;
     margin-top: 20%;
 }
 
@@ -188,8 +193,10 @@ html,body{
 }
     
 .table3x3 ul{
+    width: 100%;
+    text-align: center;
     display: inline-table;
-    width: 31%;    
+    width: 30%;    
     border-radius: 5%;
     margin: 0.5%;
     margin-bottom: 10%;
